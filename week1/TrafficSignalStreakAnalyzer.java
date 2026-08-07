@@ -1,17 +1,7 @@
-/**
- * Week 1 - Problem 3: The Traffic Signal Streak Analyzer
- *
- * Scans a signal log and reports the longest streak of consecutive
- * identical signal readings.
- */
+
 public class TrafficSignalStreakAnalyzer {
 
-    /**
-     * Finds the longest streak of consecutive identical characters in the
-     * given signal log and prints its color and length.
-     *
-     * @param signalLog string of signal readings, e.g. "RRGGGYRR"
-     */
+   
     static void findLongestStreak(String signalLog) {
         if (signalLog == null || signalLog.length() == 0) {
             System.out.println("Signal log is empty.");

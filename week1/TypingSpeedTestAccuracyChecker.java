@@ -1,20 +1,7 @@
-/**
- * Week 1 - Problem 2: The Typing Speed Test Accuracy Checker
- *
- * Compares a user's typed attempt against the original passage, character
- * by character, and reports accuracy and the position of the first
- * mismatch.
- */
+
 public class TypingSpeedTestAccuracyChecker {
 
-    /**
-     * Compares the typed text against the original passage character by
-     * character, printing the match count, accuracy percentage, and the
-     * position of the first mismatch (if any).
-     *
-     * @param original the original passage
-     * @param typed    the user's typed attempt (same length as original)
-     */
+
     static void checkTypingAccuracy(String original, String typed) {
         if (original == null || typed == null || original.length() != typed.length()) {
             System.out.println("Error: original and typed text must be non-null and of equal length.");
@@ -23,7 +10,7 @@ public class TypingSpeedTestAccuracyChecker {
 
         int length = original.length();
         int matchedCount = 0;
-        int firstMismatchPosition = -1; // -1 means no mismatch found yet
+        int firstMismatchPosition = -1; 
         char originalMismatchChar = ' ';
         char typedMismatchChar = ' ';
 
@@ -34,7 +21,7 @@ public class TypingSpeedTestAccuracyChecker {
             if (originalChar == typedChar) {
                 matchedCount++;
             } else if (firstMismatchPosition == -1) {
-                firstMismatchPosition = i + 1; // convert to 1-based position
+                firstMismatchPosition = i + 1; 
                 originalMismatchChar = originalChar;
                 typedMismatchChar = typedChar;
             }
